@@ -80,5 +80,7 @@ void primer() {
 		cout << "Подстроки " << s1 << " нет в строке: " << s0 << endl;
 	}
 
+	delete[] s0, s1;
+
 	return;
 }

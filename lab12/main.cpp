@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include "../../utils/utils/utils.h"
 #include <Windows.h>
 #include "main.h"
@@ -16,6 +15,7 @@ int main() {
 
 		switch (p) {
 			case 1: primer(); break;
+			case 2: task02(); break;
 
 
 			case -1: cout << "Выход из программы.\n"; break;
