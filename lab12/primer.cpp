@@ -1,5 +1,6 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <Windows.h>
 #include "main.h"
-#include <stdio.h>
 
 void primer() {
 	srand(time(NULL));

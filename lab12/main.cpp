@@ -1,10 +1,12 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include "../../utils/utils/utils.h"
+#include <Windows.h>
 #include "main.h"
 
 int main() {
-	setlocale(LC_ALL, "ru");
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
 	srand(time(NULL));
-
 
 	int p;
 
