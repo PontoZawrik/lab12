@@ -17,6 +17,22 @@ int main() {
 			case 1: primer(); break;
 			case 2: task02(); break;
 			case 3: task03(); break;
+			case 4: {
+				char str[100];
+				int count = 0;
+
+				cout << "Введите текст: ";
+				cin.ignore();
+				cin.getline(str, 100);
+
+				if (strlen(str) % 5 == 0) {
+					cout << task04(str, count) << endl;
+					cout << "Количество скобок: " << count << endl;
+				}
+				else {
+					cout << "Строка не кратна 5." << endl;
+				}
+			} break;
 
 
 			case -1: cout << "Выход из программы.\n"; break;
