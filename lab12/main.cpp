@@ -25,13 +25,17 @@ int main() {
 				cin.ignore();
 				cin.getline(str, 100);
 
+				char* arr = task04(str, count);
+
 				if (strlen(str) % 5 == 0) {
-					cout << task04(str, count) << endl;
+					cout << arr << endl;
 					cout << "Количество скобок: " << count << endl;
 				}
 				else {
 					cout << "Строка не кратна 5." << endl;
 				}
+
+				delete[] arr;
 			} break;
 
 
